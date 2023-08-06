@@ -8,6 +8,7 @@ const marvelApi = process.env.MARVEL_API;
 // Ma route pour avoir tous les comics
 
 router.get("/comics", async (req, res) => {
+	console.log("je suis passée dans la route /comics")
 	try {
 		let api = `https://lereacteur-marvel-api.herokuapp.com/comics?apiKey=${marvelApi}`;
 

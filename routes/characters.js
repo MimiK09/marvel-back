@@ -8,7 +8,7 @@ const marvelApi = process.env.MARVEL_API;
 // Ma route pour avoir tous les characters
 
 router.get("/characters", async (req, res) => {
-
+console.log("je suis passée dans la route /characters")
 	let { name, skip, limit } = req.query;
 	try {
 		if (!name) {
